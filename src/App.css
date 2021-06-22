@@ -1,38 +1,108 @@
-.App {
+
+.header{
+  background-color: #A1A1A1;
+  margin: 0;
+  color: white;
   text-align: center;
+  padding: 1em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home {
+  background-color: #A1A1A1;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.homePics figure{
+  width: 30%;
+}
+.homePics img{
+  width: 100%;
+  height: 15em;
+  margin: 0;
+}
+.homePics figcaption{
+  background-color:  #F9CA47;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+  box-shadow:black 2px 2px;
+  color: brown;
+}
+.homePics figcaption p{
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ---Navigationbar---- */
+.nav{
+  background-color:  #F9CA47;
+  padding: 0.5em;
+  box-shadow:black 2px 2px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.nav img{
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  margin-left: 1.5em;
+}
+.nav .circle{
+  border-radius: 50%;
+  background-color: white;
+  width: 10%;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+/* --- All Beers Page--  */
+.bier-item{
+  border-bottom:  solid;
+  width: 30%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+.bier-item div{
+  width: 100%;
+  margin-left: 2em;
+}
+.bier-item div a{
+  background-color:  #F9CA47;
+  padding: 0.5em;
+  text-decoration: none;
+  border-radius: 5px 30px 5px 30px;
+  box-shadow: black 2px 2px;
+  color: brown;
+  font-size: 0.7em;
+}
+.bier-item div h3{
+  font-size: 1em;
+}
+.bier-item div p{
+  font-size: 0.7em;
+}
+.bier-item div h4{
+  font-size: 0.7em;
+  color:  #F9CA47;
+}
+.displayItems{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 3em;
+}
+
+.home.biers{
+  flex-direction: column;
+  margin-top: 5em; /* Add a top margin to avoid content overlay */
+}
+.displayItems img{
+  width: 30%;
 }
