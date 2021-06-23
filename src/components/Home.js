@@ -26,7 +26,7 @@ class Home extends Component {
 
                     <figure >
                         <img src={pic2} alt='pic'></img>
-                        <Link to="/Biers" className='link'>
+                        <Link to="/Biers/RandomBier" className='link'>
                             <figcaption>A Random Beer</figcaption>
                         </Link>
                         <p>Beer is a major part of German culture. German beer is brewed according to the Reinheitsgebot</p>

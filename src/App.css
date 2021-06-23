@@ -124,3 +124,60 @@
 .displayItems img{
   width: 30%;
 }
+/* -----SinGle Bier---- */
+.BierDetail{
+  margin-top: 5em;
+  color: white;
+  width: 100%;
+}
+.BierDetail nav{
+  width: 100%;
+}
+.BierDetail h1{
+  text-align: center;
+  padding: 1em;
+  font-weight: 600;
+  font-size: 4em;
+}
+
+.BierDetail div h3{
+   font-size: 3em;
+   color: #F9CA47;
+   padding-bottom: 1em;
+}
+
+.BierDetail div p{
+  font-size: 2em;
+  font-weight: 500;
+}
+.single-beer{
+  padding: 2em;
+   display: flex;
+   margin: 0 auto;
+   width: 90%;
+   justify-content: space-around;
+}
+.single-beer img{
+  width: 20%;
+  
+}
+.single-beer div{
+  width: 50%;
+  padding-right: 3em;
+}
+.upDiv a{
+  background-color:  #F9CA47;
+  padding: 1em;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: black 2px 2px;
+  color: brown;
+  font-size: 2em;
+  display: inline-block;
+  position: relative;
+  bottom: 2em;
+  left: 7em;
+}
+span{
+  background-color:  #F9CA47;
+}

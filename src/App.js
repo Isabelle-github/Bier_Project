@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import RandomBier from './components/RandomBier';
 
 function App() {
   return (
@@ -22,10 +23,10 @@ function App() {
             {/* Mit exact sagen wir es muss genau so sein! */}
             <Home></Home>
           </Route>
-          <Route path="/Biers/:BierID">
-            {/* Mit exact sagen wir es muss genau so sein! */}
-            <BierDetail></BierDetail>
-          </Route>
+          <Route path="/Biers/RandomBier" component={RandomBier} exact />
+          <Route path="/Biers/:BierID" component={BierDetail} />
+
+          {/* Mit exact sagen wir es muss genau so sein! */}
           <Route path="/Biers" exact>
             {/* Mit exact sagen wir es muss genau so sein! */}
             <Biers></Biers>

@@ -1,4 +1,4 @@
-import BierDetail from "./BierDetail";
+
 import React, { Component } from 'react';
 import {
     Link
@@ -7,6 +7,8 @@ class BierItem extends Component {
     state = {}
     // console.log(props)
     render() {
+        console.log('BierItems:' + this.props.bierdata)
+        console.log('Hier mit JSON: ' + JSON.stringify(this.props.bierdata))
         return (
             <div className='displayItems'>
                 {this.props.bierdata.length > 0 ? (
