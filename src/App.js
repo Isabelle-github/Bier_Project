@@ -22,7 +22,7 @@ function App() {
             {/* Mit exact sagen wir es muss genau so sein! */}
             <Home></Home>
           </Route>
-          <Route path="/BierDetail" exact>
+          <Route path="/Biers/:BierID">
             {/* Mit exact sagen wir es muss genau so sein! */}
             <BierDetail></BierDetail>
           </Route>
